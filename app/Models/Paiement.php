@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
+/**
+ * @mixin IdeHelperPaiement
+ */
 class Paiement extends Model
 {
     use HasFactory, HasUuids;
