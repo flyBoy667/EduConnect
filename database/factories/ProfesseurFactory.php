@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\PersonnelAdministratif>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Professeur>
  */
-class PersonnelAdministratifFactory extends Factory
+class ProfesseurFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,7 @@ class PersonnelAdministratifFactory extends Factory
     public function definition(): array
     {
         return [
-
+            'specialites' => json_encode($this->faker->randomElements(['Javascript', 'PHP', 'Java', 'Python'], 2)),
         ];
     }
 }

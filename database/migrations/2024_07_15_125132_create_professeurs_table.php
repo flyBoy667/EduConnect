@@ -14,6 +14,7 @@ return new class extends Migration {
         Schema::create('professeurs', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->foreignIdFor(User::class)->constrained()->cascadeOnDelete();
+            $table->json('specialites');
             $table->timestamps();
         });
     }

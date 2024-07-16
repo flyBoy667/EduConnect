@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\PersonnelAdministratif;
+use App\Models\Professeur;
 use App\Models\User;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -17,11 +18,18 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        $user = User::factory()->create();
+        $admin = User::factory()->create();
+        $professeur = User::factory()->create();
 
         PersonnelAdministratif::factory()->create([
-            'user_id' => $user->id,
+            'user_id' => $admin->id,
             'role' => 1, // Administratif
         ]);
+
+        Professeur::factory()->create([
+            'user_id' => $professeur->id,
+        ]);
+
+
     }
 }
