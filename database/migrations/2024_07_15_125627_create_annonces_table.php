@@ -17,7 +17,6 @@ return new class extends Migration {
             $table->date('dateDebut');
             $table->date('dateFin');
             $table->string('image')->nullable();
-//            $table->foreign('utilisateur_id')->references('id')->on('utilisateurs')->onDelete('cascade');
             $table->foreignIdFor(\App\Models\User::class);
             $table->timestamps();
         });

@@ -10,38 +10,7 @@ use Illuminate\Support\Str;
 /**
  * @mixin IdeHelperProfesseur
  */
-class Professeur extends Model
+class Professeur extends User
 {
-    use HasFactory, HasUuids;
 
-    /**
-     * The "type" of the primary key ID.
-     *
-     * @var string
-     */
-    protected $keyType = 'string';
-
-    /**
-     * Indicates if the IDs are auto-incrementing.
-     *
-     * @var bool
-     */
-    public $incrementing = false;
-
-    /**
-     * Boots the model after it has been instantiated.
-     *
-     * This method is called after the model has been instantiated but before its
-     * connections are initialized.
-     *
-     * @return void
-     */
-    protected static function booted(): void
-    {
-        parent::boot();
-        // Generate a unique ID for each new user when creating a new model.
-        static::creating(function ($utilisateur) {
-            $utilisateur->id = (string)Str::uuid();
-        });
-    }
 }
