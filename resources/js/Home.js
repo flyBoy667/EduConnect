@@ -26,7 +26,7 @@ const Home = () => {
           $("#login_form input").each(function() {
               if (!$.trim($(this).val())) {
                   $(this).parent().find('span').addClass("i-warning");
-                  $(this).parent().find('span').css("display", "block");  
+                  $(this).parent().find('span').css("display", "block");
                   proceed = false;
               }
           });
