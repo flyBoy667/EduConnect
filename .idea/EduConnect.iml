@@ -122,11 +122,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpstan/phpdoc-parser" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/bacon/bacon-qr-code" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/dasprid/enum" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/fortify" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/paragonie/constant_time_encoding" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/pragmarx/google2fa" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
